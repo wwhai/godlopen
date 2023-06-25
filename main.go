@@ -47,6 +47,6 @@ func main() {
 	}
 	var fun1 func()
 	purego.RegisterLibFunc(&fun1, libc, "fun1")
-	fun1()
+	go fun1()
 	println("test ok")
 }
